@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--
+    Crie um pequeno site com 4 páginas, onde:
+Na página index (inicial) insira somente o nome do site (pode ter imagens) e
+quatro links (HOME | Receita | Vídeo | Contato)
+2. Na página Receita insira a descrição completa de uma receita e o
+componente de áudio para o usuário ouvir a receita, caso a mesma
+esteja disponível, caso contrário escolha uma música qualquer.
+3. Na página Vídeo insira o vídeo relacionado a receita.
+4. Na página Contato, crie um formulário aplicando TODOS os elementos
+estudados nesta aula, inclusive com os atributos passados.
+Aviso: utilize arquivos de áudio e vídeo pequenos, ou seja, até no máximo
+5MB cada um. Se preferir insira os vídeos e áudios embutidos na página,
+assim eles podem ficar disponíveis no YouTube por exemplo.
+-->
+
+<body>
+
+    <fieldset>
+        <h1>Pagína de Formulário</h1>
+    </fieldset>
+
+    <p>
+        <a href="index.html" target="_self">HOME</a>
+
+        <a href="receita.html" target="_blank">Receita</a>
+
+        <a href="video.html" target="_blank">Video</a>
+
+        <a href="contato.html" target="_blank">Contato</a>
+    </p>
+
+    <fieldset>
+        <p><ins>Por favor, preencha os dados no formulário abaixo:</ins></p>
+    </fieldset>
+    <br>
+    <form>
+        <fieldset>
+            <div>
+                <label>Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite o seu primerio nome">
+            </div>
+            <br>
+
+            <div>
+                <label>Sobrenome:</label>
+                <input type="text" name="Sobrenome" id="Sobrenome" placeholder="Digite o seu Sobrenome">
+            </div>
+            <br>
+
+            <div>
+                <label>Email:</label>
+                <input type="email" name="Email" id="Email" placeholder="Digite o seu Email">
+            </div>
+            <br>
+
+            <div>
+                <label>Número de telefone:</label>
+                <input type="tel" id="numero-celular" name="Número de telefone" placeholder="(xx) xxxxx-xxxx" required>
+            </div>
+            <br>
+
+            <div>
+                <label>Endereço residencial:</label>
+                <input type="text" id="Endereço residencial" name="Endereço residencial"
+                    placeholder="Digite o seu Endereço">
+            </div>
+            <br>
+
+            <div>
+                <label>Data de nascimento:</label>
+                <input type="text" id="Data de nascimento" name="Data de nascimento" placeholder="xx/xx/xxxx">
+            </div>
+            <br>
+
+            <div>
+                <label>Gênero:</label>
+                <label><input type="radio" id="Gênero" name="Gênero" value="Masculino" />Masculino </label>
+                <label><input type="radio" id="Gênero" name="Gênero" value="Feminino" />Feminino </label>
+                <label><input type="radio" id="Gênero" name="Gênero" value="Outro" />Outro </label>
+            </div>
+            <br>
+            <div>
+                <label>Estado civil:</label>
+                <input type="radio" id="Estado civil" name="Casado(a)" value="Casado(a)" />Casado(a) </label>
+                <label><input type="radio" id="Estado civil" name="Solterio(a)" value="Solterio(a)" />Solterio(a)
+                </label>
+                <label><input type="radio" id="Estado civil" name="Viuvo(a)" value="Viuvo(a)" />Viuvo(a) </label>
+            </div>
+            <br>
+            <div>
+                <label>Número do CPF:</label>
+                <input type="text" id="CPF" name="Número do CPF" placeholder="xxx.xxx.xxx-xx" required="required">
+            </div>
+            <br>
+            <div>
+                <label>Nacionalidade:</label>
+                <select>
+                    <option value="Brasileira">Brasileira</option>
+                    <option value="Americana">Americana</option>
+                    <option value="Britânica">Britânica</option>
+                    <option value="Alemã">Alemã</option>
+                    <option value="Francesa">Francesa</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Idiomas que sabe falar:</label>
+                <input type="checkbox" name="Português" id="Português" value="Português" />Português
+                <input type="checkbox" name="Inglês" id="Inglês" value="Inglês" />Inglês
+                <input type="checkbox" name="Espanhol" id="Espanhol" value="Espanhol" />Espanhol
+                <input type="checkbox" name="Mandarim" id="Mandarim" value="Mandarim" />Mandarim
+                <input type="checkbox" name="Russo" id="Russo" value="Russo" />Russo
+                <input type="checkbox" name="Italiano" id="Italiano" value="Italiano" />Italiano
+            </div>
+        </fieldset>
+
+    </form>
+
+     
+
+</body>
+
+</html>
